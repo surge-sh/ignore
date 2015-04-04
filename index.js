@@ -6,14 +6,16 @@
 //
 // 1. We really don’t want your `.git` directory
 // 2. We don’t need any dotfiles, like `.DS_Store`
-// 3. We don’t want `node_modules/` since those should
+// 3. Vim temp files. See Issue #1.
+// 4. We don’t want `node_modules/` since those should
 //    already be compiled in somehow. Developers can opt-out
 //    of this by adding `!node_modules/` to their `.surgeignore`.
-// 4. Same goes for Bower as npm.
+// 5. Same goes for Bower as npm.
 
 module.exports = [
   ".git",             // [1]
   ".*",               // [2]
-  "node_modules",     // [3]
-  "bower_components", // [4]
+  "*.*~",             // [3]
+  "node_modules",     // [4]
+  "bower_components"  // [5]
 ]
