@@ -13,9 +13,9 @@
 // 5. Same goes for Bower as npm.
 
 module.exports = [
-  ".git",             // [1]
-  ".*",               // [2]
-  "*.*~",             // [3]
-  "node_modules",     // [4]
-  "bower_components"  // [5]
+  '.git',             // [1]
+  '.*',               // [2]
+  '*.*~',             // [3]
+  'node_modules',     // [4]
+  'bower_components'  // [5]
 ]
