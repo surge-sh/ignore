@@ -11,6 +11,8 @@
 //    already be compiled in somehow. Developers can opt-out
 //    of this by adding `!node_modules/` to their `.surgeignore`.
 // 5. Same goes for Bower as npm.
+// 6. Ignores the `.key` and `.crt` files we tell people to
+//    make when they adding a custom SSL certificate
 
 module.exports = [
   ".git",             // [1]
@@ -18,4 +20,6 @@ module.exports = [
   "*.*~",             // [3]
   "node_modules",     // [4]
   "bower_components"  // [5]
+  "surge.key",        // [6]
+  "surge.crt"         // [6]
 ]
