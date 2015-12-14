@@ -1,6 +1,6 @@
 {
   "name": "surge-ignore",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "The default things we ignore when you deploy to Surge",
   "repository": "git://github.com/surge-sh/ignore.git",
   "homepage": "https://surge.sh/help/ignoring-files-and-directories",
