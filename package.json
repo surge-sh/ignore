@@ -6,11 +6,11 @@
   "homepage": "https://surge.sh/help/ignoring-files-and-directories",
   "main": "index.json",
   "license": "MIT",
-  "author": "Kenneth Ormandy <kenneth@chloi.io> (http://kennethormandy.com)",
+  "author": "Kenneth Ormandy <kenneth@surge.sh> (https://surge.sh)",
   "contributors": [
-    "Kenneth Ormandy <kenneth@chloi.io>",
-    "Rob Ellis <rob@chloi.io>",
-    "Brock Whitten <brock@chloi.io>"
+    "Kenneth Ormandy <kenneth@surge.sh> (http://kennethormandy.com)",
+    "Brock Whitten   <brock@surge.sh>   (http://sintaxi.com)",
+    "Rob Ellis       <rob@chloi.io>     (http://silentrob.me)"
   ],
   "keywords": [
     "ignore",
@@ -18,6 +18,10 @@
     "surge.sh"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jsonlint index.json -q",
+    "prepublish": "npm test"
+  },
+  "devDependencies": {
+    "jsonlint": "1.6.2"
   }
 }
